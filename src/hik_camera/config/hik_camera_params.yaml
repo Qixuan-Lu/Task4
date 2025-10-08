@@ -1,0 +1,22 @@
+/hik_camera:
+  ros__parameters:
+    camera_info_url: ''
+    camera_ip: ''
+    camera_name: hik_camera
+    camera_serial: 00L34964883
+    exposure_time: 14515.0
+    frame_rate: 30.0
+    gain: 12.0
+    image_raw:
+      enable_pub_plugins:
+      - image_transport/raw
+    pixel_format: BGR8
+    qos_overrides:
+      /parameter_events:
+        publisher:
+          depth: 1000
+          durability: volatile
+          history: keep_last
+          reliability: reliable
+    use_sim_time: false
+
